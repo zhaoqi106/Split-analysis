@@ -1,0 +1,156 @@
+{
+  "mmseqs_version": "503743960fc57733a36951f5fa803cb3389af7e2",
+  "mmseqs_path": "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+  "reference_parameters": {
+    "min_seq_id": 0.3,
+    "coverage": 0.8,
+    "cov_mode": 0,
+    "cluster_mode": 1
+  },
+  "datasets": [
+    {
+      "dataset": "S1131",
+      "input_csv": "/data_ssd/hantm/gwc/zongshu/data_split/S1131.csv",
+      "input_sha256": "d9fd608491ad0dfe2a36cc248b6ca507a6722fcef8b09cdef6bf52f048e20107",
+      "mmseqs_version": "503743960fc57733a36951f5fa803cb3389af7e2",
+      "mmseqs_path": "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+      "mmseqs_sha256": "f393cd8d4c433261156cb65bae72b1e464c5fa707747db519e724b5c2f22a4dc",
+      "parameters": {
+        "min_seq_id": 0.3,
+        "coverage": 0.8,
+        "cov_mode": 0,
+        "cluster_mode": 1,
+        "single_step_clustering": true
+      },
+      "n_records": 1131,
+      "n_pdbs": 112,
+      "n_complexes": 112,
+      "n_groups": 36,
+      "largest_group_records": 621,
+      "largest_group_fraction": 0.5490716180371353,
+      "one_fold_per_group": true,
+      "group_map": {
+        "path": "/data_ssd/hantm/gwc/zongshu/data_split/S1131/icsv_group_map.csv",
+        "exists": true,
+        "record_uid_match": true,
+        "group_labels_equal": true,
+        "partition_equal": true,
+        "n_rows": 1131,
+        "n_groups": 36
+      },
+      "existing_folds_match": true,
+      "commands": [
+        [
+          "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+          "easy-cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/sequences/left.fasta",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/clusters/identity_030_coverage_080/left_cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/tmp/identity_030_coverage_080/left",
+          "--min-seq-id",
+          "0.3",
+          "-c",
+          "0.8",
+          "--cov-mode",
+          "0",
+          "--cluster-mode",
+          "1",
+          "--threads",
+          "8",
+          "--single-step-clustering",
+          "1"
+        ],
+        [
+          "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+          "easy-cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/sequences/right.fasta",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/clusters/identity_030_coverage_080/right_cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/S1131/tmp/identity_030_coverage_080/right",
+          "--min-seq-id",
+          "0.3",
+          "-c",
+          "0.8",
+          "--cov-mode",
+          "0",
+          "--cluster-mode",
+          "1",
+          "--threads",
+          "8",
+          "--single-step-clustering",
+          "1"
+        ]
+      ]
+    },
+    {
+      "dataset": "M1101",
+      "input_csv": "/data_ssd/hantm/gwc/zongshu/data_split/M1101.csv",
+      "input_sha256": "be8aad0f99ee9706b695875fb906d59d9d442b29b649b28e610d0ae19eb2ce3c",
+      "mmseqs_version": "503743960fc57733a36951f5fa803cb3389af7e2",
+      "mmseqs_path": "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+      "mmseqs_sha256": "f393cd8d4c433261156cb65bae72b1e464c5fa707747db519e724b5c2f22a4dc",
+      "parameters": {
+        "min_seq_id": 0.3,
+        "coverage": 0.8,
+        "cov_mode": 0,
+        "cluster_mode": 1,
+        "single_step_clustering": true
+      },
+      "n_records": 1101,
+      "n_pdbs": 32,
+      "n_complexes": 32,
+      "n_groups": 8,
+      "largest_group_records": 683,
+      "largest_group_fraction": 0.620345140781108,
+      "one_fold_per_group": true,
+      "group_map": {
+        "path": "/data_ssd/hantm/gwc/zongshu/data_split/M1101/icsv_group_map.csv",
+        "exists": true,
+        "record_uid_match": true,
+        "group_labels_equal": true,
+        "partition_equal": true,
+        "n_rows": 1101,
+        "n_groups": 8
+      },
+      "existing_folds_match": true,
+      "commands": [
+        [
+          "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+          "easy-cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/sequences/left.fasta",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/clusters/identity_030_coverage_080/left_cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/tmp/identity_030_coverage_080/left",
+          "--min-seq-id",
+          "0.3",
+          "-c",
+          "0.8",
+          "--cov-mode",
+          "0",
+          "--cluster-mode",
+          "1",
+          "--threads",
+          "8",
+          "--single-step-clustering",
+          "1"
+        ],
+        [
+          "/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs",
+          "easy-cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/sequences/right.fasta",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/clusters/identity_030_coverage_080/right_cluster",
+          "SPLIT_R3/ICSV_CLUSTERING_AUDIT/M1101/tmp/identity_030_coverage_080/right",
+          "--min-seq-id",
+          "0.3",
+          "-c",
+          "0.8",
+          "--cov-mode",
+          "0",
+          "--cluster-mode",
+          "1",
+          "--threads",
+          "8",
+          "--single-step-clustering",
+          "1"
+        ]
+      ]
+    }
+  ]
+}

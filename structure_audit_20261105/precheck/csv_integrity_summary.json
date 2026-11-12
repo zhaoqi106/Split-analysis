@@ -1,0 +1,848 @@
+{
+  "S1131": {
+    "canonical_multiset_size": 1131,
+    "unique_signatures": 1131,
+    "RCSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 5,
+      "all_pass": true
+    },
+    "PCSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          904,
+          905,
+          905,
+          905,
+          905
+        ],
+        "n_val_per_fold": [
+          227,
+          226,
+          226,
+          226,
+          226
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 5,
+      "all_pass": true
+    },
+    "ICSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          510,
+          1003,
+          1003,
+          1003,
+          1005
+        ],
+        "n_val_per_fold": [
+          621,
+          128,
+          128,
+          128,
+          126
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          510,
+          1003,
+          1003,
+          1003,
+          1005
+        ],
+        "n_val_per_fold": [
+          621,
+          128,
+          128,
+          128,
+          126
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          510,
+          1003,
+          1003,
+          1003,
+          1005
+        ],
+        "n_val_per_fold": [
+          621,
+          128,
+          128,
+          128,
+          126
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          510,
+          1003,
+          1003,
+          1003,
+          1005
+        ],
+        "n_val_per_fold": [
+          621,
+          128,
+          128,
+          128,
+          126
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          510,
+          1003,
+          1003,
+          1003,
+          1005
+        ],
+        "n_val_per_fold": [
+          621,
+          128,
+          128,
+          128,
+          126
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 5,
+      "all_pass": true
+    }
+  },
+  "M1101": {
+    "canonical_multiset_size": 1101,
+    "unique_signatures": 1101,
+    "RCSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          880,
+          881,
+          881,
+          881,
+          881
+        ],
+        "n_val_per_fold": [
+          221,
+          220,
+          220,
+          220,
+          220
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          880,
+          881,
+          881,
+          881,
+          881
+        ],
+        "n_val_per_fold": [
+          221,
+          220,
+          220,
+          220,
+          220
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          880,
+          881,
+          881,
+          881,
+          881
+        ],
+        "n_val_per_fold": [
+          221,
+          220,
+          220,
+          220,
+          220
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          880,
+          881,
+          881,
+          881,
+          881
+        ],
+        "n_val_per_fold": [
+          221,
+          220,
+          220,
+          220,
+          220
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          880,
+          881,
+          881,
+          881,
+          881
+        ],
+        "n_val_per_fold": [
+          221,
+          220,
+          220,
+          220,
+          220
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 5,
+      "all_pass": true
+    },
+    "PCSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          855,
+          886,
+          889,
+          887,
+          887
+        ],
+        "n_val_per_fold": [
+          246,
+          215,
+          212,
+          214,
+          214
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          855,
+          886,
+          889,
+          887,
+          887
+        ],
+        "n_val_per_fold": [
+          246,
+          215,
+          212,
+          214,
+          214
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          855,
+          886,
+          889,
+          887,
+          887
+        ],
+        "n_val_per_fold": [
+          246,
+          215,
+          212,
+          214,
+          214
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          855,
+          886,
+          889,
+          887,
+          887
+        ],
+        "n_val_per_fold": [
+          246,
+          215,
+          212,
+          214,
+          214
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          855,
+          886,
+          889,
+          887,
+          887
+        ],
+        "n_val_per_fold": [
+          246,
+          215,
+          212,
+          214,
+          214
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 5,
+      "all_pass": true
+    },
+    "ICSV": {
+      "0": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          418,
+          830,
+          1050,
+          1053,
+          1053
+        ],
+        "n_val_per_fold": [
+          683,
+          271,
+          51,
+          48,
+          48
+        ]
+      },
+      "42": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          418,
+          830,
+          1050,
+          1053,
+          1053
+        ],
+        "n_val_per_fold": [
+          683,
+          271,
+          51,
+          48,
+          48
+        ]
+      },
+      "1024": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          418,
+          830,
+          1050,
+          1053,
+          1053
+        ],
+        "n_val_per_fold": [
+          683,
+          271,
+          51,
+          48,
+          48
+        ]
+      },
+      "1234": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          418,
+          830,
+          1050,
+          1053,
+          1053
+        ],
+        "n_val_per_fold": [
+          683,
+          271,
+          51,
+          48,
+          48
+        ]
+      },
+      "2026": {
+        "fold_ok": true,
+        "val_union_full": true,
+        "n_train_per_fold": [
+          418,
+          830,
+          1050,
+          1053,
+          1053
+        ],
+        "n_val_per_fold": [
+          683,
+          271,
+          51,
+          48,
+          48
+        ]
+      },
+      "unique_outer_allocations_across_seeds": 1,
+      "all_pass": true
+    },
+    "AGCV": {
+      "0": {
+        "folds": {
+          "0": {
+            "n_outer_train": 855,
+            "n_outer_eval": 246,
+            "n_inner_train": 683,
+            "n_inner_val": 172,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2012
+          },
+          "1": {
+            "n_outer_train": 890,
+            "n_outer_eval": 211,
+            "n_inner_train": 711,
+            "n_inner_val": 179,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2011
+          },
+          "2": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 700,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2099
+          },
+          "3": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 705,
+            "n_inner_val": 181,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2043
+          },
+          "4": {
+            "n_outer_train": 887,
+            "n_outer_eval": 214,
+            "n_inner_train": 701,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2097
+          }
+        }
+      },
+      "42": {
+        "folds": {
+          "0": {
+            "n_outer_train": 855,
+            "n_outer_eval": 246,
+            "n_inner_train": 683,
+            "n_inner_val": 172,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2012
+          },
+          "1": {
+            "n_outer_train": 890,
+            "n_outer_eval": 211,
+            "n_inner_train": 711,
+            "n_inner_val": 179,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2011
+          },
+          "2": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 700,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2099
+          },
+          "3": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 705,
+            "n_inner_val": 181,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2043
+          },
+          "4": {
+            "n_outer_train": 887,
+            "n_outer_eval": 214,
+            "n_inner_train": 701,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2097
+          }
+        }
+      },
+      "1024": {
+        "folds": {
+          "0": {
+            "n_outer_train": 855,
+            "n_outer_eval": 246,
+            "n_inner_train": 683,
+            "n_inner_val": 172,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2012
+          },
+          "1": {
+            "n_outer_train": 890,
+            "n_outer_eval": 211,
+            "n_inner_train": 711,
+            "n_inner_val": 179,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2011
+          },
+          "2": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 700,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2099
+          },
+          "3": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 705,
+            "n_inner_val": 181,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2043
+          },
+          "4": {
+            "n_outer_train": 887,
+            "n_outer_eval": 214,
+            "n_inner_train": 701,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2097
+          }
+        }
+      },
+      "1234": {
+        "folds": {
+          "0": {
+            "n_outer_train": 855,
+            "n_outer_eval": 246,
+            "n_inner_train": 683,
+            "n_inner_val": 172,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2012
+          },
+          "1": {
+            "n_outer_train": 890,
+            "n_outer_eval": 211,
+            "n_inner_train": 711,
+            "n_inner_val": 179,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2011
+          },
+          "2": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 700,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2099
+          },
+          "3": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 705,
+            "n_inner_val": 181,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2043
+          },
+          "4": {
+            "n_outer_train": 887,
+            "n_outer_eval": 214,
+            "n_inner_train": 701,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2097
+          }
+        }
+      },
+      "2026": {
+        "folds": {
+          "0": {
+            "n_outer_train": 855,
+            "n_outer_eval": 246,
+            "n_inner_train": 683,
+            "n_inner_val": 172,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2012
+          },
+          "1": {
+            "n_outer_train": 890,
+            "n_outer_eval": 211,
+            "n_inner_train": 711,
+            "n_inner_val": 179,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2011
+          },
+          "2": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 700,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2099
+          },
+          "3": {
+            "n_outer_train": 886,
+            "n_outer_eval": 215,
+            "n_inner_train": 705,
+            "n_inner_val": 181,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2043
+          },
+          "4": {
+            "n_outer_train": 887,
+            "n_outer_eval": 214,
+            "n_inner_train": 701,
+            "n_inner_val": 186,
+            "outer_train_eq_inner_union": true,
+            "inner_disjoint": true,
+            "outer_eval_disjoint": true,
+            "inner_val_frac_of_outer_train": 0.2097
+          }
+        }
+      },
+      "unique_outer_allocations_across_seeds": 4,
+      "all_pass": true
+    }
+  }
+}

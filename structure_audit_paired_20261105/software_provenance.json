@@ -1,0 +1,6 @@
+{
+  "usalign_version": "* US-align (Version 20260328)                                      *",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+  "command_template": "USalign {partner_i} {partner_j} -mm 1 -ter 1"
+}

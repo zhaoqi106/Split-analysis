@@ -1,0 +1,4 @@
+[M1101] computing self lengths for 32 complexes
+[M1101] self lengths done
+[M1101] running 496 pairwise alignments with 32 workers
+[M1101] DONE 496 pairs, failures=0 -> /home/zhao/gwc/zongshu/output/reviewer_structure_audit_20261105/pairwise/M1101_pairwise.csv

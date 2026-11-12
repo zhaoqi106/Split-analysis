@@ -1,0 +1,96 @@
+dataset,seed,fold,anomaly_type,severity,detail
+M1101,0,0,CHAIN_EXACT_OVERLAP,CRITICAL,55/683 val records share an exact partner CHAIN with training (rate 0.1040)
+M1101,0,0,CHAIN_SIMILARITY(30-90%),WARN,16 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+M1101,0,0,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,0,0,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,0,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"13 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,0,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"14 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,0,3,CHAIN_EXACT_OVERLAP,CRITICAL,39/48 val records share an exact partner CHAIN with training (rate 0.8125)
+M1101,0,3,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,0,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,0,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,42,0,CHAIN_EXACT_OVERLAP,CRITICAL,55/683 val records share an exact partner CHAIN with training (rate 0.1040)
+M1101,42,0,CHAIN_SIMILARITY(30-90%),WARN,16 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+M1101,42,0,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,42,0,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,42,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"13 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,42,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"14 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,42,3,CHAIN_EXACT_OVERLAP,CRITICAL,39/48 val records share an exact partner CHAIN with training (rate 0.8125)
+M1101,42,3,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,42,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,42,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1024,0,CHAIN_EXACT_OVERLAP,CRITICAL,55/683 val records share an exact partner CHAIN with training (rate 0.1040)
+M1101,1024,0,CHAIN_SIMILARITY(30-90%),WARN,16 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+M1101,1024,0,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,1024,0,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,1024,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"13 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1024,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"14 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1024,3,CHAIN_EXACT_OVERLAP,CRITICAL,39/48 val records share an exact partner CHAIN with training (rate 0.8125)
+M1101,1024,3,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,1024,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,1024,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1234,0,CHAIN_EXACT_OVERLAP,CRITICAL,55/683 val records share an exact partner CHAIN with training (rate 0.1040)
+M1101,1234,0,CHAIN_SIMILARITY(30-90%),WARN,16 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+M1101,1234,0,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,1234,0,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,1234,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"13 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1234,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"14 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,1234,3,CHAIN_EXACT_OVERLAP,CRITICAL,39/48 val records share an exact partner CHAIN with training (rate 0.8125)
+M1101,1234,3,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,1234,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,1234,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,2026,0,CHAIN_EXACT_OVERLAP,CRITICAL,55/683 val records share an exact partner CHAIN with training (rate 0.1040)
+M1101,2026,0,CHAIN_SIMILARITY(30-90%),WARN,16 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+M1101,2026,0,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,2026,0,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,2026,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"13 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,2026,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"14 cross-fold PDB pairs with TM in [0.5,0.7)"
+M1101,2026,3,CHAIN_EXACT_OVERLAP,CRITICAL,39/48 val records share an exact partner CHAIN with training (rate 0.8125)
+M1101,2026,3,STRUCT_NEAR_IDENTICAL_CROSSFOLD,HIGH,8 cross-fold PDB pairs with TM>=0.9
+M1101,2026,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.7,0.9)"
+M1101,2026,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,0,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"51 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,0,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"44 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,0,2,CHAIN_EXACT_OVERLAP,CRITICAL,5/128 val records share an exact partner CHAIN with training (rate 0.1172)
+S1131,0,2,CHAIN_SIMILARITY(30-90%),WARN,10 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,0,2,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"6 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,0,3,CHAIN_EXACT_OVERLAP,CRITICAL,7/128 val records share an exact partner CHAIN with training (rate 0.0781)
+S1131,0,3,CHAIN_SIMILARITY(30-90%),WARN,3 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,0,3,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,0,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"27 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,0,4,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,0,4,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"6 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,42,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"51 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,42,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"45 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,42,2,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"12 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,42,3,CHAIN_SIMILARITY(30-90%),WARN,3 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,42,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"28 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,42,4,CHAIN_SIMILARITY(30-90%),WARN,10 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,42,4,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1024,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"51 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1024,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"42 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1024,2,CHAIN_EXACT_OVERLAP,CRITICAL,5/128 val records share an exact partner CHAIN with training (rate 0.0391)
+S1131,1024,2,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,1024,2,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"9 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1024,3,CHAIN_EXACT_OVERLAP,CRITICAL,7/128 val records share an exact partner CHAIN with training (rate 0.0781)
+S1131,1024,3,CHAIN_SIMILARITY(30-90%),WARN,3 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,1024,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"26 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1024,4,CHAIN_SIMILARITY(30-90%),WARN,10 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,1024,4,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,1024,4,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"4 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1234,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"51 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1234,1,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,1234,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"42 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1234,2,CHAIN_EXACT_OVERLAP,CRITICAL,5/128 val records share an exact partner CHAIN with training (rate 0.1172)
+S1131,1234,2,CHAIN_SIMILARITY(30-90%),WARN,10 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,1234,2,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"7 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1234,3,CHAIN_EXACT_OVERLAP,CRITICAL,7/128 val records share an exact partner CHAIN with training (rate 0.0781)
+S1131,1234,3,CHAIN_SIMILARITY(30-90%),WARN,3 val records have a chain 30-90% identical (>=30%/80% bicov) to training
+S1131,1234,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"26 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,1234,4,STRUCT_SIMILAR_CROSSFOLD,INFO,"2 cross-fold PDB pairs with TM in [0.7,0.9)"
+S1131,1234,4,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"4 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,2026,0,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"51 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,2026,1,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"44 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,2026,2,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"11 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,2026,3,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"3 cross-fold PDB pairs with TM in [0.5,0.7)"
+S1131,2026,4,STRUCT_SAME_FOLD_CROSSFOLD,INFO,"25 cross-fold PDB pairs with TM in [0.5,0.7)"

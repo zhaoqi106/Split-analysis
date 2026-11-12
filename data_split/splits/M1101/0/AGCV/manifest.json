@@ -1,0 +1,239 @@
+{
+  "dataset": "M1101",
+  "split": "AGCV",
+  "seed": 0,
+  "n_splits": 5,
+  "inner_val_fraction_target": 0.2,
+  "inner_seed_rule": "inner_seed = outer_seed * 1000 + zero_based_fold_id",
+  "mapping_gate": "CONFIRMED_PENDING_AUDIT",
+  "mapping_gate_reason": "All mappings used for grouping are confirmed. Independent audit still required.",
+  "formal_status": "PASS",
+  "input_csv": {
+    "path": "/data_ssd/hantm/gwc/zongshu/data_split/M1101.csv",
+    "sha256": "be8aad0f99ee9706b695875fb906d59d9d442b29b649b28e610d0ae19eb2ce3c"
+  },
+  "skempi_csv": null,
+  "scripts": [
+    {
+      "path": "/data_ssd/hantm/gwc/zongshu/data_split/three_splits.py",
+      "sha256": "c8e0f62eb3a1c37c571139303ce0e627b576f1e0652047bb1c1d1a391d1507e3"
+    },
+    {
+      "path": "/data_ssd/hantm/gwc/zongshu/data_split/entity_group_cv.py",
+      "sha256": "8a1b5249ea1faa3afae8e4dee26a6c5fcb57dbf66aed78cda73f7a1a840580b1"
+    }
+  ],
+  "mapping_file": "antigen_mapping.csv",
+  "version_comparison": [
+    {
+      "label": "M1101_official_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/data_split/M1101.csv",
+      "exists": true,
+      "used": true,
+      "sha256": "be8aad0f99ee9706b695875fb906d59d9d442b29b649b28e610d0ae19eb2ce3c",
+      "bytes": 1698553
+    },
+    {
+      "label": "M1101_SAMAffinity_not_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/SAMAffinity/data/M1101.csv",
+      "exists": true,
+      "used": false,
+      "sha256": "0ce2e31c4b52923aca9641cdfe086274240fcda6ce179d9ebb371689697863fe",
+      "bytes": 1561914
+    },
+    {
+      "label": "M1101_GeoPPI_not_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/GeoPPI/data/benchmarkDatasets/M1101.csv",
+      "exists": true,
+      "used": false,
+      "sha256": "078ab9b5c64459d5aa2e39cfdfbabdedcd946fa6bccfb49d81f59df2e175e29f",
+      "bytes": 129633
+    },
+    {
+      "label": "S1131_official_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/data_split/S1131.csv",
+      "exists": true,
+      "used": false,
+      "sha256": "d9fd608491ad0dfe2a36cc248b6ca507a6722fcef8b09cdef6bf52f048e20107",
+      "bytes": 794508
+    },
+    {
+      "label": "S1131_SAMAffinity_not_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/SAMAffinity/data/S1131.csv",
+      "exists": true,
+      "used": false,
+      "sha256": "ed8930af71ee7f58f484b13fd0f72c0eb48a19e079ac723b13c41f54298fd6b5",
+      "bytes": 763063
+    },
+    {
+      "label": "S1131_GeoPPI_not_used",
+      "path": "/data_ssd/hantm/gwc/zongshu/GeoPPI/data/benchmarkDatasets/S1131.csv",
+      "exists": true,
+      "used": false,
+      "sha256": "5133cac6e5803cc19a3198c7f1f46759b0665704ee347b86024a5cccfc9ce8be",
+      "bytes": 46417
+    },
+    {
+      "label": "home_zhao_gwc",
+      "path": "/home/zhao/gwc",
+      "exists": false,
+      "used": false,
+      "note": "Requested legacy server path is not present on this machine."
+    }
+  ],
+  "grouping_rule": "M1101 groups are curated antigen-side entities accepted only after exact wild-type sequence identity or exact whole-chain substring containment, plus local PDB CA matches. No sequence-identity threshold is used. Shared antibodies do not merge antigens.",
+  "balance_algorithm": "Sort group ids lexicographically, shuffle with numpy default_rng(seed), then stable-sort by record count descending. Assign each group to the current smallest fold. argmin breaks remaining size ties toward the lowest fold index. Labels and model metrics are not used.",
+  "inner_validation_rule": "Same greedy rule inside outer_train, using inner_seed. Target validation size is inner_val_fraction times outer_train records. Equal relative fill assigns the group to inner_train. outer_eval is never a fallback validation set.",
+  "ignored_by_model_reader": [
+    "record_uid"
+  ],
+  "limitations": [
+    "Sequence-identity clustering beyond exact identity or exact substring was not used and is not computed here.",
+    "Structure-similarity search was not run.",
+    "Entity holdout does not imply absence of homologs, local interface similarity, or pretraining exposure.",
+    "Five folds, five seeds, and the 20% inner validation target are project settings, not MochiBind parameters."
+  ],
+  "output_files": [
+    {
+      "path": "README_AGCV.md",
+      "sha256": "7833e149c7901f58631a0d35656ff754032152933370e9e4051b2a1fbc987c48",
+      "bytes": 3531
+    },
+    {
+      "path": "antigen_group_summary.csv",
+      "sha256": "7f952c717c7dfb5e62e56dde9c861b6ab3c08575b69d0045ca0829a14cc6a5fc",
+      "bytes": 1171
+    },
+    {
+      "path": "antigen_mapping.csv",
+      "sha256": "6684ae59478e5f03c9ef1cbd97f716437a829c74a94a1ffeb1539d0af59f74ed",
+      "bytes": 795810
+    },
+    {
+      "path": "audit_summary.json",
+      "sha256": "dd942b82d3e87224bfb8ac902e605048b3958242e8d9423367d5a2e28aa3aa9a",
+      "bytes": 3132
+    },
+    {
+      "path": "audit_violations.csv",
+      "sha256": "e650745799740948e4509093a38c4978d24220945cbdce013e9fe3e659c4e8f4",
+      "bytes": 57
+    },
+    {
+      "path": "fold_0_inner_train.csv",
+      "sha256": "f259e6eec9c3e3e5de0888aca5a8bb46c5dda8081dac0a8c2f782ebedad265b8",
+      "bytes": 1117284
+    },
+    {
+      "path": "fold_0_inner_val.csv",
+      "sha256": "53bc348e5bda97dae3441fbda951b2c229cf09f7c1ea3dc9e7c1ab18b7644409",
+      "bytes": 236046
+    },
+    {
+      "path": "fold_0_outer_eval.csv",
+      "sha256": "39da98127f5785e380e50d7f1cb315d845039dbb37be5c729179df0910177808",
+      "bytes": 360299
+    },
+    {
+      "path": "fold_0_outer_train.csv",
+      "sha256": "306dd86caa0d4e0ed909d786c0ce5fb6dce875706d362ecbc90293d4c91ac5be",
+      "bytes": 1352954
+    },
+    {
+      "path": "fold_1_inner_train.csv",
+      "sha256": "dabe90e5ac6aaa1dea8149fcc0d87c609ecfd58b679b33273dd243e1aeb96957",
+      "bytes": 1204232
+    },
+    {
+      "path": "fold_1_inner_val.csv",
+      "sha256": "555e18d86b407ce926193fcceab2c619758db8e7a1744a22f755d129299dda73",
+      "bytes": 265123
+    },
+    {
+      "path": "fold_1_outer_eval.csv",
+      "sha256": "70846ab8baa8751ec2c8613b120df4c24b7aa4814336fda47b02d67e0ab06550",
+      "bytes": 244274
+    },
+    {
+      "path": "fold_1_outer_train.csv",
+      "sha256": "10276aa3aca29d42723b792f8f68a8bc07b15ac4b923b8b5fce697a8d2e18c5e",
+      "bytes": 1468979
+    },
+    {
+      "path": "fold_2_inner_train.csv",
+      "sha256": "3e1091a5cce121de1232e9a7c2d7213c4e5ab4734eb6fb71bfd8f915c52a4237",
+      "bytes": 1232240
+    },
+    {
+      "path": "fold_2_inner_val.csv",
+      "sha256": "5acef6a784bb6791323df157a3ed563390938224fd9fac432e9684a1eca64d52",
+      "bytes": 207171
+    },
+    {
+      "path": "fold_2_outer_eval.csv",
+      "sha256": "6e69de49773f3c465d87ae7427bf50d3fe455143bc5c9c58e33bfca09f083236",
+      "bytes": 274218
+    },
+    {
+      "path": "fold_2_outer_train.csv",
+      "sha256": "5d3eba19fce7840304e518f2385ac1e836e1076ea00ad98767ae2bd22a59668f",
+      "bytes": 1439035
+    },
+    {
+      "path": "fold_3_inner_train.csv",
+      "sha256": "cd450ce4ef1e54c8b02aeee44288abe62626a0d443ef7f302b042355518f866b",
+      "bytes": 1174805
+    },
+    {
+      "path": "fold_3_inner_val.csv",
+      "sha256": "41891ba4c69901929830e462a1c0db093209cb919b42c302cb367ad454a1c40e",
+      "bytes": 209829
+    },
+    {
+      "path": "fold_3_outer_eval.csv",
+      "sha256": "687d276411c7801a96e23f8539b880cd969404eea5ad64bb184a861f8c934110",
+      "bytes": 328995
+    },
+    {
+      "path": "fold_3_outer_train.csv",
+      "sha256": "4c45e79fcfe5f1e11c54bff3f6b7ceafec4d29240607b7be9458859fae214986",
+      "bytes": 1384258
+    },
+    {
+      "path": "fold_4_inner_train.csv",
+      "sha256": "96770f3d51da1ea0c6e56826945ff8b300bbe7894f37a1b7a49c14001007e4d1",
+      "bytes": 999863
+    },
+    {
+      "path": "fold_4_inner_val.csv",
+      "sha256": "5acef6a784bb6791323df157a3ed563390938224fd9fac432e9684a1eca64d52",
+      "bytes": 207171
+    },
+    {
+      "path": "fold_4_outer_eval.csv",
+      "sha256": "6f244aca6c13b272f11d66f1d22894d97245f5ac7210af1e2f67c0d36834ed0d",
+      "bytes": 506595
+    },
+    {
+      "path": "fold_4_outer_train.csv",
+      "sha256": "8ffe4396e5a3f67a30e854c4b1e985dac01a5be119e85cc5b567ef8d5363d063",
+      "bytes": 1206658
+    },
+    {
+      "path": "fold_summary.csv",
+      "sha256": "af655d1e8292f9553eef6ebc0c7943a417627133389447e31d952d861768aa6f",
+      "bytes": 2601
+    },
+    {
+      "path": "outer_assignments.csv",
+      "sha256": "9fe9bdb3ad31bb8a8eea653659b852ef594e5999b8e16fb3cfaa546bf55100a6",
+      "bytes": 47905
+    }
+  ],
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "audit_script": {
+    "path": "/data_ssd/hantm/gwc/zongshu/data_split/audit_antigen_group_splits.py",
+    "sha256": "91ea59ddb912e847101a1786a7096b310f2cb87a5463f6076ce89d96b35f6377"
+  }
+}

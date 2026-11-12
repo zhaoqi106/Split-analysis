@@ -1,0 +1,3 @@
+503743960fc57733a36951f5fa803cb3389af7e2
+/data_ssd/hantm/gwc/zongshu/tools/mmseqs/bin/mmseqs
+f393cd8d4c433261156cb65bae72b1e464c5fa707747db519e724b5c2f22a4dc

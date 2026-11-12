@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "split_dir": "/data_ssd/hantm/gwc/zongshu/data_split/SPLIT_R3/M1101/42/AGCV",
+  "source_csv": "/data_ssd/hantm/gwc/zongshu/data_split/M1101.csv",
+  "source_sha256": "be8aad0f99ee9706b695875fb906d59d9d442b29b649b28e610d0ae19eb2ce3c",
+  "mapping_file": "antigen_mapping.csv",
+  "n_source_records": 1101,
+  "n_folds": 5,
+  "mapping_status_counts": {
+    "confirmed": 1101
+  },
+  "checks": [
+    {
+      "name": "mapping_status",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "statuses=confirmed"
+    },
+    {
+      "name": "pdb_traceable",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "normalized PDB ids recomputed from pdb_raw and mutation id"
+    },
+    {
+      "name": "outer_eval_partition",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "folds=[0, 1, 2, 3, 4]"
+    },
+    {
+      "name": "identical_wt_sequence_same_group",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "Exact wild-type sequence hash from the mapping file. This is not a similarity-threshold audit."
+    },
+    {
+      "name": "subset_disjoint_and_cover",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "record cover and subset disjointness"
+    },
+    {
+      "name": "entity_groups_disjoint",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "entity groups do not cross inner_train, inner_val, and outer_eval"
+    },
+    {
+      "name": "source_fields_preserved",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "fold files compared with the normalized source row; record_uid is ignored as a feature"
+    },
+    {
+      "name": "identical_model_input",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "Partners, mutation strings, and wild-type/mutant sequence columns"
+    },
+    {
+      "name": "duplicate_mutation_ids_retained",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "duplicate mutation IDs=5; source rows=10"
+    },
+    {
+      "name": "same_entity_across_pdb",
+      "status": "PASS",
+      "n_errors": 0,
+      "detail": "7 entity groups contain more than one PDB. Group ids are taken from the on-disk mapping."
+    },
+    {
+      "name": "shared_antibody_entities",
+      "status": "INFO",
+      "n_errors": 0,
+      "detail": "outer_eval records=1101; antibody entity also in outer_train=87; unseen antigen entity and unseen antibody entity=1014. Shared antibodies are allowed."
+    },
+    {
+      "name": "sequence_similarity_beyond_exact_match",
+      "status": "未计算",
+      "n_errors": 0,
+      "detail": "No sequence-identity clustering threshold was run. Exact identity and exact substring checks are separate."
+    },
+    {
+      "name": "structure_similarity",
+      "status": "未计算",
+      "n_errors": 0,
+      "detail": "No structure-similarity audit was run."
+    }
+  ],
+  "uncomputed": [
+    "sequence_similarity_beyond_exact_match",
+    "structure_similarity"
+  ],
+  "limitations": [
+    "Entity-level holdout is not a claim of no homology, no local interface similarity, or no pretraining exposure.",
+    "Items marked 未计算 were not run. They are not zeros."
+  ]
+}

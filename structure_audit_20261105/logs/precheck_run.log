@@ -1,0 +1,14 @@
+=== INVENTORY ===
+S1131 {"dataset": "S1131", "wt_files_total": 112, "wt_full_complexes": 112, "wt_perchain_slices": 0, "wt_xvg": 0, "wt_other": 0, "mut_files_total": 1141, "mut_pdb": 1135, "mut_xvg": 6, "mut_other": 0, "canonical_records": 1131, "unique_pdb_in_records": 112, "unique_ID_in_records": 1131, "referenced_pdb_without_wt_full": [], "wt_full_without_records": []}
+M1101 {"dataset": "M1101", "wt_files_total": 88, "wt_full_complexes": 32, "wt_perchain_slices": 24, "wt_xvg": 32, "wt_other": 0, "mut_files_total": 1656, "mut_pdb": 1336, "mut_xvg": 320, "mut_other": 0, "canonical_records": 1101, "unique_pdb_in_records": 32, "unique_ID_in_records": 1096, "referenced_pdb_without_wt_full": [], "wt_full_without_records": []}
+
+=== SPLIT SUMMARY (key) ===
+S1131 RCSV all_pass= True unique_alloc= 5
+S1131 PCSV all_pass= True unique_alloc= 5
+S1131 ICSV all_pass= True unique_alloc= 5
+M1101 RCSV all_pass= True unique_alloc= 5
+M1101 PCSV all_pass= True unique_alloc= 5
+M1101 ICSV all_pass= True unique_alloc= 1
+M1101 AGCV all_pass= True unique_alloc= 4
+
+anomalies: 0

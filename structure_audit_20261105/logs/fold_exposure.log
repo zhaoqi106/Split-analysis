@@ -1,0 +1,11 @@
+Wrote exposure tables.
+Per-fold cells: 175
+
+dataset  split  cells  shared  tm>=0.7 novel>=0.7 meanBestTM meanBilat
+S1131    RCSV      25   0.776    0.979      0.661      0.988     0.986
+S1131    PCSV      25   0.000    0.725      0.725      0.814     0.794
+S1131    ICSV      25   0.000    0.014      0.014      0.370     0.315
+M1101    RCSV      25   1.000    1.000      0.698      1.000     1.000
+M1101    PCSV      25   0.000    0.704      0.704      0.809     0.773
+M1101    ICSV      25   0.000    0.000      0.000      0.416     0.353
+M1101    AGCV      25   0.000    0.579      0.579      0.719     0.684

@@ -1,0 +1,22 @@
+{
+  "metric": "paired global-partner structural exposure (manuscript eq 4-8)",
+  "usalign_binary": "~/.local/bin/USalign",
+  "usalign_version": "20260328",
+  "usalign_command": "USalign <partner_i.pdb> <partner_j.pdb> -mm 1 -ter 1",
+  "TM_threshold_tau": 0.70,
+  "bidirectional_coverage_threshold_c": 0.80,
+  "S_p": "min(TM_p,v, TM_p,t)  (partner-length normalized, bidirectional)",
+  "C_p": "min(aligned/len_v_p, aligned/len_t_p)  (bidirectional coverage)",
+  "S_pair": "min(S_left, S_right)",
+  "C_pair": "min(C_left, C_right)",
+  "exposed_rule": "exists a SINGLE training complex t with S_pair>=tau AND C_pair>=c (same t for both sides)",
+  "primary_statistic": "record-weighted exposure, INCLUDING identical-complex matches",
+  "secondary_statistics": ["record-weighted excluding identical", "complex-weighted including identical", "complex-weighted excluding identical"],
+  "partners_S1131": "left = R1-R6 (== Heavy+Light); right = L1-L3 (== Antigen chains)",
+  "partners_M1101": "left = antibody side (antibody_chains); right = antigen side (antigen_chains); metadata antigen_mapping.csv",
+  "M1101_role_swap": "1KTZ, HM_1KTZ: metadata antibody/antigen are swapped vs CSV columns; metadata authoritative",
+  "HM_handling": "HM_ prefixed structures kept as independent structure objects",
+  "AGCV": "uses outer_train / outer_eval only",
+  "seeds": ["0","42","1024","1234","2026"],
+  "splits": {"S1131": ["RCSV","PCSV","ICSV"], "M1101": ["RCSV","PCSV","ICSV","AGCV"]}
+}

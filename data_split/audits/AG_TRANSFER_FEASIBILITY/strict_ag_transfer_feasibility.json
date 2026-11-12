@@ -1,0 +1,650 @@
+{
+  "question_full_1101_five_fold_strict_ag_transfer": {
+    "feasible": false,
+    "n_source_records": 1101,
+    "n_confirmed_records": 1101,
+    "n_unresolved_records": 0,
+    "structural_upper_bound_records": 131,
+    "reason": "A record can enter strict Ag-transfer only when its complete antibody entity also occurs in another intact antigen group that is placed in inner_train. 970 confirmed records belong to antibody entities that occur in only one antigen group. Holding that group out removes the antibody from every training subset. Those records cannot be covered by any five-fold, group-intact assignment."
+  },
+  "antibody_identity": {
+    "primary_key": "confirmed antibody_entity_id, recomputed as ABSEQ_ plus SHA1-12 of the wild-type partner sequence tuple",
+    "pair_rule": "Heavy and light sequences are both required when both chains exist. Either chain alone is only an auxiliary count.",
+    "n_antibody_entities": 29,
+    "identity_definition_counts": {
+      "paired_heavy_and_light": 993,
+      "single_chain_in_heavy_column": 108
+    },
+    "biological_role_counts": {
+      "classical_antibody_antigen": 683,
+      "fc_receptor_complex": 271,
+      "non_antibody_complex": 108,
+      "antibody_idiotope": 39
+    },
+    "mapping_conflicts": [],
+    "mapping_identical_across_five_seeds_on_entity_columns": true,
+    "mapping_differences": [],
+    "mapping_file_sha256": {
+      "0": "38afa297d4a04752c176c45bbba8e5acd6e2d3d373e212c1b93d39608f8f4fd5",
+      "42": "38afa297d4a04752c176c45bbba8e5acd6e2d3d373e212c1b93d39608f8f4fd5",
+      "1234": "38afa297d4a04752c176c45bbba8e5acd6e2d3d373e212c1b93d39608f8f4fd5",
+      "2026": "38afa297d4a04752c176c45bbba8e5acd6e2d3d373e212c1b93d39608f8f4fd5",
+      "1024": "38afa297d4a04752c176c45bbba8e5acd6e2d3d373e212c1b93d39608f8f4fd5"
+    },
+    "source_sha256": "be8aad0f99ee9706b695875fb906d59d9d442b29b649b28e610d0ae19eb2ce3c"
+  },
+  "antibody_antigen_reuse": {
+    "n_antibody_entities": 29,
+    "n_antibodies_in_one_antigen_group": 26,
+    "n_records_of_single_group_antibodies": 970,
+    "n_antibodies_in_two_or_more_antigen_groups": 3,
+    "n_records_of_multi_group_antibodies": 131,
+    "n_antigen_groups": 22,
+    "shared_antigen_group_pairs": [
+      {
+        "antigen_group_a": "AG_BONTA1",
+        "antigen_group_b": "AG_BONTA2",
+        "n_shared_antibody_entities": 2,
+        "shared_antibody_entity_ids": [
+          "ABSEQ_24b4b264b9d1",
+          "ABSEQ_2befe52357b7"
+        ],
+        "n_records_in_a_with_shared_antibodies": 47,
+        "n_records_in_b_with_shared_antibodies": 41
+      },
+      {
+        "antigen_group_a": "AG_EPITHIN",
+        "antigen_group_b": "AG_MTSP1",
+        "n_shared_antibody_entities": 1,
+        "shared_antibody_entity_ids": [
+          "ABSEQ_9a8f59575a34"
+        ],
+        "n_records_in_a_with_shared_antibodies": 8,
+        "n_records_in_b_with_shared_antibodies": 35
+      }
+    ],
+    "antigen_group_summary": [
+      {
+        "antigen_group_id": "AG_FCGR3_1T83",
+        "n_records": 246,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 246,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_LYSOZYME",
+        "n_records": 164,
+        "n_antibody_entities": 4,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 164,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_INTEGRIN_I",
+        "n_records": 93,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 93,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_VEGF",
+        "n_records": 72,
+        "n_antibody_entities": 3,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 72,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_MTSP1",
+        "n_records": 62,
+        "n_antibody_entities": 2,
+        "n_multi_group_antibody_entities": 1,
+        "n_records_with_multi_group_antibody": 35,
+        "n_records_with_single_group_antibody": 27,
+        "partner_antigen_groups": [
+          "AG_EPITHIN"
+        ]
+      },
+      {
+        "antigen_group_id": "AG_BONTA1",
+        "n_records": 47,
+        "n_antibody_entities": 2,
+        "n_multi_group_antibody_entities": 2,
+        "n_records_with_multi_group_antibody": 47,
+        "n_records_with_single_group_antibody": 0,
+        "partner_antigen_groups": [
+          "AG_BONTA2"
+        ]
+      },
+      {
+        "antigen_group_id": "AG_TGFB_IDENTICAL_WT",
+        "n_records": 44,
+        "n_antibody_entities": 2,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 44,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_HPR",
+        "n_records": 43,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 43,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_BONTA2",
+        "n_records": 41,
+        "n_antibody_entities": 2,
+        "n_multi_group_antibody_entities": 2,
+        "n_records_with_multi_group_antibody": 41,
+        "n_records_with_single_group_antibody": 0,
+        "partner_antigen_groups": [
+          "AG_BONTA1"
+        ]
+      },
+      {
+        "antigen_group_id": "AG_E52_FV",
+        "n_records": 39,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 39,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_HER2_1N8Z",
+        "n_records": 38,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 38,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_HER2_3BE1",
+        "n_records": 34,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 34,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_BLIP",
+        "n_records": 31,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 31,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_GP120_2NY7",
+        "n_records": 31,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 31,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_FCGR2B_3WJJ",
+        "n_records": 25,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 25,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_EGFR",
+        "n_records": 24,
+        "n_antibody_entities": 2,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 24,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_HIV1_CAPSID_NTERM",
+        "n_records": 17,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 17,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_GP120_3NGB",
+        "n_records": 15,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 15,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_IFNGR1_108",
+        "n_records": 11,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 11,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_CHEY",
+        "n_records": 9,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 9,
+        "partner_antigen_groups": []
+      },
+      {
+        "antigen_group_id": "AG_EPITHIN",
+        "n_records": 8,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 1,
+        "n_records_with_multi_group_antibody": 8,
+        "n_records_with_single_group_antibody": 0,
+        "partner_antigen_groups": [
+          "AG_MTSP1"
+        ]
+      },
+      {
+        "antigen_group_id": "AG_SH2_3K2M",
+        "n_records": 7,
+        "n_antibody_entities": 1,
+        "n_multi_group_antibody_entities": 0,
+        "n_records_with_multi_group_antibody": 0,
+        "n_records_with_single_group_antibody": 7,
+        "partner_antigen_groups": []
+      }
+    ],
+    "auxiliary_not_used_for_eligibility": {
+      "n_exact_heavy_sequences_shared_by_multiple_groups": 3,
+      "n_exact_light_sequences_shared_by_multiple_groups": 2,
+      "heavy_matches_that_are_not_the_same_full_antibody": [],
+      "light_matches_that_are_not_the_same_full_antibody": [
+        {
+          "n_antibody_entities": 2,
+          "antibody_entity_ids": [
+            "ABSEQ_24b4b264b9d1",
+            "ABSEQ_2befe52357b7"
+          ],
+          "antigen_groups": [
+            "AG_BONTA1",
+            "AG_BONTA2"
+          ],
+          "n_records": 88
+        }
+      ],
+      "n_records_whose_some_single_chain_occurs_in_another_group": 131,
+      "n_records_loose_chain_only_full_antibody_does_not_cross": 0,
+      "proper_substring_pairs_not_used": [
+        {
+          "chain": "light_or_single_light_column",
+          "lengths": [
+            216,
+            217
+          ],
+          "groups_left": [
+            "AG_VEGF"
+          ],
+          "groups_right": [
+            "AG_HER2_3BE1"
+          ]
+        }
+      ]
+    }
+  },
+  "existing_agcv": {
+    "root": "/data_ssd/hantm/gwc/zongshu/data_split/SPLIT_R2/M1101",
+    "seeds": [
+      0,
+      42,
+      1234,
+      2026,
+      1024
+    ],
+    "per_seed_record_coverage": [
+      {
+        "seed": 0,
+        "n_eligible_record_evaluations": 0,
+        "n_outer_eval": 1101,
+        "coverage": 0.0
+      },
+      {
+        "seed": 42,
+        "n_eligible_record_evaluations": 0,
+        "n_outer_eval": 1101,
+        "coverage": 0.0
+      },
+      {
+        "seed": 1024,
+        "n_eligible_record_evaluations": 0,
+        "n_outer_eval": 1101,
+        "coverage": 0.0
+      },
+      {
+        "seed": 1234,
+        "n_eligible_record_evaluations": 0,
+        "n_outer_eval": 1101,
+        "coverage": 0.0
+      },
+      {
+        "seed": 2026,
+        "n_eligible_record_evaluations": 0,
+        "n_outer_eval": 1101,
+        "coverage": 0.0
+      }
+    ],
+    "partition_errors": [],
+    "fold_consistency_notes": [],
+    "eligibility_definition": "antigen group absent from inner_train and inner_val; complete antibody entity present in inner_train"
+  },
+  "reassignment_search": {
+    "objective": "Maximize the number of source records that are eligible exactly once across five outer folds, subject to intact antigen groups.",
+    "constraints": [
+      "22 antigen groups from the on-disk SPLIT_R2 mapping",
+      "each group assigned to exactly one of 5 outer folds",
+      "each fold nonempty",
+      "inner_train and inner_val are intact groups and partition outer_train",
+      "an outer-eval record is eligible only if its antibody entity occurs in inner_train",
+      "inner_val antibodies do not count",
+      "no ΔΔG labels"
+    ],
+    "structural_upper_bound": 131,
+    "upper_bound_proof": "Every single-group antibody record is ineligible in every intact-group split. Therefore no assignment can exceed the multi-group record count. If the exhibited assignment reaches that count, the count is the maximum.",
+    "solver": "deterministic construction plus exact inner-validation subset search",
+    "solver_status": "proven_maximum",
+    "exhibited_eligible_records": 131,
+    "exhibited_coverage_of_1101": 0.11898274296094459,
+    "improves_on_every_existing_seed": true,
+    "solution": {
+      "rule": "Antigen groups stay intact. Multi-group antibodies are placed onto different outer folds by a deterministic lightest-fold rule sorted by group id and group size. Inner validation is an exact subset of groups that are not required as the last inner_train support, chosen to be closest to 20% of outer_train records. No ΔΔG value is used.",
+      "eligible_records_over_one_full_pass": 131,
+      "multi_group_records_blocked_by_outer_fold_collision": 0,
+      "all_inner_splits_feasible": true,
+      "all_inner_fractions_within_0.15_0.25": true,
+      "inner_val_fractions": [
+        0.19977426636568849,
+        0.1995490417136415,
+        0.1995490417136415,
+        0.20022497187851518,
+        0.2
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "outer_eval_groups": [
+            "AG_BLIP",
+            "AG_BONTA1",
+            "AG_CHEY",
+            "AG_E52_FV",
+            "AG_HIV1_CAPSID_NTERM",
+            "AG_VEGF"
+          ],
+          "outer_eval_records": 215,
+          "multi_group_antibody_records": 47,
+          "eligible_if_supports_stay_in_inner_train": 47,
+          "blocked_because_support_groups_share_this_outer_fold": 0,
+          "pinned_inner_train_groups": [
+            "AG_BONTA2"
+          ],
+          "inner_train_groups": [
+            "AG_BONTA2",
+            "AG_EGFR",
+            "AG_EPITHIN",
+            "AG_FCGR2B_3WJJ",
+            "AG_FCGR3_1T83",
+            "AG_GP120_2NY7",
+            "AG_HER2_3BE1",
+            "AG_HPR",
+            "AG_INTEGRIN_I",
+            "AG_LYSOZYME"
+          ],
+          "inner_val_groups": [
+            "AG_GP120_3NGB",
+            "AG_HER2_1N8Z",
+            "AG_IFNGR1_108",
+            "AG_MTSP1",
+            "AG_SH2_3K2M",
+            "AG_TGFB_IDENTICAL_WT"
+          ],
+          "inner_val_records": 177,
+          "inner_train_records": 709,
+          "inner_val_fraction": 0.19977426636568849,
+          "inner_val_within_0.15_0.25": true,
+          "inner_split_feasible": true,
+          "antigen_groups_disjoint": true
+        },
+        {
+          "fold": 1,
+          "outer_eval_groups": [
+            "AG_BONTA2",
+            "AG_GP120_2NY7",
+            "AG_HER2_1N8Z",
+            "AG_IFNGR1_108",
+            "AG_INTEGRIN_I"
+          ],
+          "outer_eval_records": 214,
+          "multi_group_antibody_records": 41,
+          "eligible_if_supports_stay_in_inner_train": 41,
+          "blocked_because_support_groups_share_this_outer_fold": 0,
+          "pinned_inner_train_groups": [
+            "AG_BONTA1"
+          ],
+          "inner_train_groups": [
+            "AG_BONTA1",
+            "AG_CHEY",
+            "AG_E52_FV",
+            "AG_EGFR",
+            "AG_FCGR2B_3WJJ",
+            "AG_FCGR3_1T83",
+            "AG_HER2_3BE1",
+            "AG_HIV1_CAPSID_NTERM",
+            "AG_HPR",
+            "AG_LYSOZYME",
+            "AG_MTSP1"
+          ],
+          "inner_val_groups": [
+            "AG_BLIP",
+            "AG_EPITHIN",
+            "AG_GP120_3NGB",
+            "AG_SH2_3K2M",
+            "AG_TGFB_IDENTICAL_WT",
+            "AG_VEGF"
+          ],
+          "inner_val_records": 177,
+          "inner_train_records": 710,
+          "inner_val_fraction": 0.1995490417136415,
+          "inner_val_within_0.15_0.25": true,
+          "inner_split_feasible": true,
+          "antigen_groups_disjoint": true
+        },
+        {
+          "fold": 2,
+          "outer_eval_groups": [
+            "AG_EGFR",
+            "AG_HER2_3BE1",
+            "AG_HPR",
+            "AG_MTSP1",
+            "AG_SH2_3K2M",
+            "AG_TGFB_IDENTICAL_WT"
+          ],
+          "outer_eval_records": 214,
+          "multi_group_antibody_records": 35,
+          "eligible_if_supports_stay_in_inner_train": 35,
+          "blocked_because_support_groups_share_this_outer_fold": 0,
+          "pinned_inner_train_groups": [
+            "AG_EPITHIN"
+          ],
+          "inner_train_groups": [
+            "AG_BLIP",
+            "AG_BONTA1",
+            "AG_BONTA2",
+            "AG_CHEY",
+            "AG_EPITHIN",
+            "AG_FCGR2B_3WJJ",
+            "AG_FCGR3_1T83",
+            "AG_GP120_2NY7",
+            "AG_GP120_3NGB",
+            "AG_INTEGRIN_I",
+            "AG_LYSOZYME"
+          ],
+          "inner_val_groups": [
+            "AG_E52_FV",
+            "AG_HER2_1N8Z",
+            "AG_HIV1_CAPSID_NTERM",
+            "AG_IFNGR1_108",
+            "AG_VEGF"
+          ],
+          "inner_val_records": 177,
+          "inner_train_records": 710,
+          "inner_val_fraction": 0.1995490417136415,
+          "inner_val_within_0.15_0.25": true,
+          "inner_split_feasible": true,
+          "antigen_groups_disjoint": true
+        },
+        {
+          "fold": 3,
+          "outer_eval_groups": [
+            "AG_EPITHIN",
+            "AG_FCGR2B_3WJJ",
+            "AG_GP120_3NGB",
+            "AG_LYSOZYME"
+          ],
+          "outer_eval_records": 212,
+          "multi_group_antibody_records": 8,
+          "eligible_if_supports_stay_in_inner_train": 8,
+          "blocked_because_support_groups_share_this_outer_fold": 0,
+          "pinned_inner_train_groups": [
+            "AG_MTSP1"
+          ],
+          "inner_train_groups": [
+            "AG_BLIP",
+            "AG_BONTA1",
+            "AG_BONTA2",
+            "AG_CHEY",
+            "AG_E52_FV",
+            "AG_EGFR",
+            "AG_FCGR3_1T83",
+            "AG_GP120_2NY7",
+            "AG_HER2_3BE1",
+            "AG_HPR",
+            "AG_IFNGR1_108",
+            "AG_INTEGRIN_I",
+            "AG_MTSP1"
+          ],
+          "inner_val_groups": [
+            "AG_HER2_1N8Z",
+            "AG_HIV1_CAPSID_NTERM",
+            "AG_SH2_3K2M",
+            "AG_TGFB_IDENTICAL_WT",
+            "AG_VEGF"
+          ],
+          "inner_val_records": 178,
+          "inner_train_records": 711,
+          "inner_val_fraction": 0.20022497187851518,
+          "inner_val_within_0.15_0.25": true,
+          "inner_split_feasible": true,
+          "antigen_groups_disjoint": true
+        },
+        {
+          "fold": 4,
+          "outer_eval_groups": [
+            "AG_FCGR3_1T83"
+          ],
+          "outer_eval_records": 246,
+          "multi_group_antibody_records": 0,
+          "eligible_if_supports_stay_in_inner_train": 0,
+          "blocked_because_support_groups_share_this_outer_fold": 0,
+          "pinned_inner_train_groups": [],
+          "inner_train_groups": [
+            "AG_BLIP",
+            "AG_BONTA1",
+            "AG_BONTA2",
+            "AG_CHEY",
+            "AG_E52_FV",
+            "AG_EGFR",
+            "AG_EPITHIN",
+            "AG_FCGR2B_3WJJ",
+            "AG_GP120_3NGB",
+            "AG_HER2_1N8Z",
+            "AG_HER2_3BE1",
+            "AG_HPR",
+            "AG_IFNGR1_108",
+            "AG_INTEGRIN_I",
+            "AG_LYSOZYME",
+            "AG_MTSP1"
+          ],
+          "inner_val_groups": [
+            "AG_GP120_2NY7",
+            "AG_HIV1_CAPSID_NTERM",
+            "AG_SH2_3K2M",
+            "AG_TGFB_IDENTICAL_WT",
+            "AG_VEGF"
+          ],
+          "inner_val_records": 171,
+          "inner_train_records": 684,
+          "inner_val_fraction": 0.2,
+          "inner_val_within_0.15_0.25": true,
+          "inner_split_feasible": true,
+          "antigen_groups_disjoint": true
+        }
+      ],
+      "outer_assignment": {
+        "AG_BLIP": 0,
+        "AG_BONTA1": 0,
+        "AG_BONTA2": 1,
+        "AG_CHEY": 0,
+        "AG_E52_FV": 0,
+        "AG_EGFR": 2,
+        "AG_EPITHIN": 3,
+        "AG_FCGR2B_3WJJ": 3,
+        "AG_FCGR3_1T83": 4,
+        "AG_GP120_2NY7": 1,
+        "AG_GP120_3NGB": 3,
+        "AG_HER2_1N8Z": 1,
+        "AG_HER2_3BE1": 2,
+        "AG_HIV1_CAPSID_NTERM": 0,
+        "AG_HPR": 2,
+        "AG_IFNGR1_108": 1,
+        "AG_INTEGRIN_I": 1,
+        "AG_LYSOZYME": 3,
+        "AG_MTSP1": 2,
+        "AG_SH2_3K2M": 2,
+        "AG_TGFB_IDENTICAL_WT": 2,
+        "AG_VEGF": 0
+      }
+    },
+    "new_split_files_written": false
+  },
+  "recommendation": "不要把完整 1101 条记录做成严格 Ag-transfer 五折。若后续只评估多抗原组抗体这一子集，重新分配抗原组可以达到该子集的结构上界；现有 AGCV 没有达到这个上界时才需要独立新目录。本审计不把任何一个覆盖率预设为足以发表。",
+  "executed": [
+    "loaded all 1101 M1101.csv rows by source index",
+    "verified five SPLIT_R2 antigen mappings on entity columns",
+    "recomputed antibody sequence tuples from R1-R6 and L1-L3 and matched stored hashes",
+    "built antibody-antigen group incidence",
+    "scored existing five seeds and five folds from inner_train versus outer_eval",
+    "searched one identity-only reassignment against the structural upper bound"
+  ],
+  "not_computed": [
+    "sequence-identity clustering below exact match",
+    "structure or interface similarity",
+    "model training",
+    "a new fold CSV split",
+    "any split chosen with ΔΔG"
+  ]
+}

@@ -1,0 +1,7 @@
+mmseqs_bin=/home/zhao/tools/mmseqs/bin/mmseqs
+mmseqs_version=bd01c2229f027d8d8e61947f44d11ef1a7669212
+usalign_bin=/home/zhao/.local/bin/USalign
+usalign_version=20260328
+min_seq_id=0.3 coverage=0.8 cov_mode=0 sensitivity=-s 7.5
+TM tiers: near>=0.9 similar>=0.7 samefold>=0.5
+datasets=('M1101', 'S1131') seeds=(0, 42, 1024, 1234, 2026) split_type=ICSV

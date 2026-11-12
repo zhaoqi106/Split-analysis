@@ -1,0 +1,6 @@
+hm_pdb,template_base,template_present,tm_norm_by_hm_vs_template,tm_norm_by_base_vs_template,cov_hm,cov_base,top_non_template_base,top_non_template_tm_norm_by_hm
+HM_1KTZ,1KTZ,yes,0.99256,0.97678,1.0,0.9840425531914894,2NZ9,0.40207
+HM_1YY9,1YY9,yes,0.99954,0.40891,1.0,0.40900383141762453,3BN9,0.64533
+HM_2NYY,2NYY,yes,0.98437,1.0,0.9843659525188188,1.0,2NZ9,0.97863
+HM_2NZ9,2NZ9,yes,0.98437,1.0,0.9843659525188188,1.0,2NYY,0.97863
+HM_3BN9,3BN9,yes,1.0,1.0,1.0,1.0,2NYY,0.70731

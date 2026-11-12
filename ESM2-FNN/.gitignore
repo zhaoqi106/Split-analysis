@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-logs_bf16/
-*.log
-*.pid
-fold_*_best_model.pt
-fold_metrics_summary.csv
-predicate_all_folds.csv
-summary.txt

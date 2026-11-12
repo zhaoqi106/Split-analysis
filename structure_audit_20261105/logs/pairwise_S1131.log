@@ -1,0 +1,16 @@
+[S1131] computing self lengths for 112 complexes
+[S1131] self lengths done
+[S1131] running 6216 pairwise alignments with 64 workers
+[S1131] 500/6216 pairs, failures=0
+[S1131] 1000/6216 pairs, failures=0
+[S1131] 1500/6216 pairs, failures=0
+[S1131] 2000/6216 pairs, failures=0
+[S1131] 2500/6216 pairs, failures=0
+[S1131] 3000/6216 pairs, failures=0
+[S1131] 3500/6216 pairs, failures=0
+[S1131] 4000/6216 pairs, failures=0
+[S1131] 4500/6216 pairs, failures=0
+[S1131] 5000/6216 pairs, failures=0
+[S1131] 5500/6216 pairs, failures=0
+[S1131] 6000/6216 pairs, failures=0
+[S1131] DONE 6216 pairs, failures=0 -> /home/zhao/gwc/zongshu/output/reviewer_structure_audit_20261105/pairwise/S1131_pairwise.csv

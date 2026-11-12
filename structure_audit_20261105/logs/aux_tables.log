@@ -1,0 +1,21 @@
+fail rows: 0
+{
+  "tool": "US-align",
+  "version": "20260328",
+  "binary_path": "/home/zhao/.local/bin/USalign",
+  "binary_copy": "/home/zhao/gwc/zongshu/output/reviewer_structure_audit_20261105/usalign_bin/USalign",
+  "binary_sha256": "dc6624938b7800a4bded5a7bde837b84ca04e4c14c7006ee0bf8a8fb83236408",
+  "download_url": "https://zhanggroup.org/US-align/bin/module/USalignLinux64.zip",
+  "architecture": "ELF 64-bit LSB executable, x86-64, statically linked",
+  "alignment_mode": "-mm 1 -ter 1 (global alignment of multi-chain complexes; -ter 1 aligns all chains of the first model)",
+  "command_template": "USalign {wt_i}.pdb {wt_j}.pdb -mm 1 -ter 1",
+  "normalization": "TM-score recorded in both directions: normalized by length of structure_1 and structure_2",
+  "coverage": "aligned_length / length(structure_1) and aligned_length / length(structure_2)"
+}
+
+=== HM template summary ===
+{'hm_pdb': 'HM_1KTZ', 'template_base': '1KTZ', 'template_present': 'yes', 'tm_norm_by_hm_vs_template': '0.99256', 'tm_norm_by_base_vs_template': '0.97678', 'cov_hm': '1.0', 'cov_base': '0.9840425531914894', 'top_non_template_base': '2NZ9', 'top_non_template_tm_norm_by_hm': '0.40207'}
+{'hm_pdb': 'HM_1YY9', 'template_base': '1YY9', 'template_present': 'yes', 'tm_norm_by_hm_vs_template': '0.99954', 'tm_norm_by_base_vs_template': '0.40891', 'cov_hm': '1.0', 'cov_base': '0.40900383141762453', 'top_non_template_base': '3BN9', 'top_non_template_tm_norm_by_hm': '0.64533'}
+{'hm_pdb': 'HM_2NYY', 'template_base': '2NYY', 'template_present': 'yes', 'tm_norm_by_hm_vs_template': '0.98437', 'tm_norm_by_base_vs_template': '1.0', 'cov_hm': '0.9843659525188188', 'cov_base': '1.0', 'top_non_template_base': '2NZ9', 'top_non_template_tm_norm_by_hm': '0.97863'}
+{'hm_pdb': 'HM_2NZ9', 'template_base': '2NZ9', 'template_present': 'yes', 'tm_norm_by_hm_vs_template': '0.98437', 'tm_norm_by_base_vs_template': '1.0', 'cov_hm': '0.9843659525188188', 'cov_base': '1.0', 'top_non_template_base': '2NYY', 'top_non_template_tm_norm_by_hm': '0.97863'}
+{'hm_pdb': 'HM_3BN9', 'template_base': '3BN9', 'template_present': 'yes', 'tm_norm_by_hm_vs_template': '1.0', 'tm_norm_by_base_vs_template': '1.0', 'cov_hm': '1.0', 'cov_base': '1.0', 'top_non_template_base': '2NYY', 'top_non_template_tm_norm_by_hm': '0.70731'}

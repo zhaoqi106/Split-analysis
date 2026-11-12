@@ -1,0 +1,23 @@
+entity_group_id,entity_name,n_records,n_pdb,n_complex,pdb_list,mapping_status
+AG_FCGR3_1T83,hu-FCgIIIb,246,1,1,1T83,confirmed
+AG_LYSOZYME,Lysozyme,164,4,4,"1DQJ,1MLC,1VFB,3HFM",confirmed
+AG_INTEGRIN_I,Integrin-I,93,1,1,1MHP,confirmed
+AG_HER2,human HER2/ERBB2 extracellular region,72,2,2,"1N8Z,3BE1",confirmed
+AG_VEGF,VEGF,72,3,3,"1BJ1,1CZ8,3BDY",confirmed
+AG_MTSP1,MT-SP1,62,2,2,"3BN9,3NPS",confirmed
+AG_BONTA1,Bont/A1,47,2,2,"2NYY,2NZ9",confirmed
+AG_HPR,HPr,43,1,1,2JEL,confirmed
+AG_BONTA2,Bont/A2,41,2,2,"HM_2NYY,HM_2NZ9",confirmed
+AG_E52_FV,E5.2 Fv,39,1,1,1DVF,confirmed
+AG_BLIP,Beta-Lactamase inhibitor,31,1,1,1JTG,confirmed
+AG_GP120_2NY7,HIV-1 gp120 (2NY7 construct),31,1,1,2NY7,confirmed
+AG_FCGR2B_3WJJ,FcgRIIb,25,1,1,3WJJ,confirmed
+AG_EGFR,EGFR,24,2,2,"1YY9,HM_1YY9",confirmed
+AG_TGFB1,TGF-beta1,22,1,1,HM_1KTZ,confirmed
+AG_TGFB3,TGF-beta3,22,1,1,1KTZ,confirmed
+AG_HIV1_CAPSID_NTERM,HIV-1 CAPSID (N-Term),17,1,1,1AK4,confirmed
+AG_GP120_3NGB,HIV-1 gp120 (3NGB construct),15,1,1,3NGB,confirmed
+AG_IFNGR1_108,IFNgammaR1-108,11,1,1,1JRH,confirmed
+AG_CHEY,CHEY,9,1,1,1FFW,confirmed
+AG_EPITHIN,Epithin,8,1,1,HM_3BN9,confirmed
+AG_SH2_3K2M,SH2 Domain,7,1,1,3K2M,confirmed

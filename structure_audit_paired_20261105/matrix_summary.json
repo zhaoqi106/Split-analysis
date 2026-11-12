@@ -1,0 +1,12 @@
+{
+  "S1131": {
+    "n_complexes": 112,
+    "n_pairs": 6216,
+    "n_pairs_exposed_tau0.7_cov0.8": 322
+  },
+  "M1101": {
+    "n_complexes": 32,
+    "n_pairs": 496,
+    "n_pairs_exposed_tau0.7_cov0.8": 16
+  }
+}
