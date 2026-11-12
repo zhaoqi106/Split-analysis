@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES 仅设为 1、2、3，未使用 GPU 0 或其他卡。
 任务数量:
   计划总条目 125 = 75 个缩减规模新增训练任务 + 50 个完整规模参考点。
   75 个新增任务全部成功，0 失败。
-  完整规模参考点 50 个均能在 adapt/runs/adapt_code_v1 找到原正式输出。
+  完整规模参考点 50 个复用已有完整规模运行，未在本实验中重新训练。
 
 四、数据与抽样检查
 - 逐任务检查 inner_train_sampled / inner_val / outer_eval UID 互斥：通过。

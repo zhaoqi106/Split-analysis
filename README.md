@@ -33,7 +33,6 @@ This tree holds the benchmark tables, cross-validation splits, exposure audits, 
 - Cluster-size imbalance in ICSV comes from the connected components, not from the seed. Changing the clustering thresholds changes the folds.
 - The full 1101-record M1101 set cannot support a strict antibody-transfer split. The structural upper bound is 131 records (11.90%). See `data_split/audits/AG_TRANSFER_FEASIBILITY/`.
 - Whole-complex TM-score exposure is in `structure_audit_20261105/`. Paired left/right exposure is in `structure_audit_paired_20261105/`.
-- For Figure 3 and Figure 4, SAMAffinity and StaB-ddG numbers come from the `adapt_code_v1` runs.
 
 ## Code
 

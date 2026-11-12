@@ -94,7 +94,7 @@ M1101 RCSV 0.783、PCSV 0.733、ICSV 0.000、AGCV 0.612。
 | `exposure/hm_template_summary.csv` | HM 模板比较摘要 |
 | `exposure/failed_or_undetermined.csv` | 失败/无法判定记录（本次为空） |
 | `manifests/`、`precheck/` | 结构清单、链映射、划分完整性（见预检报告） |
-| `scripts/`、`logs/` | 可复现脚本与运行日志。预览热图、暴露率条形图和 `scripts/plot_figures.py` 已删除 |
+| `scripts/`、`logs/` | 可复现脚本与运行日志 |
 
 数值矩阵见 `exposure/{ds}_matrix_tm_normalized_by_row.csv`。
 
